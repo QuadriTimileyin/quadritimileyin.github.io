@@ -28,13 +28,13 @@ const ServiceGrid = () => {
                             id={2}
                             icon={<RiSmartphoneFill size={60} />}
                             title={"Mobile App Development"}
-                            description={"Cross-platform mobile apps built with React Native for performance and scalability."}
+                            description={"Cross-platform mobile apps built with Flutter for performance and scalability."}
                         />
                         <Card
                             id={3}
                             icon={<RiCloudLine size={60} />}
                             title={"DevOps & Cloud Infrastructure"}
-                            description={"Automated CI/CD pipelines, cloud deployments (AWS/GCP/Azure), Docker, Kubernetes & monitoring setup."}
+                            description={"Automated CI/CD pipelines, cloud deployments, Docker."}
                         />
                     </div>
                 </div>
