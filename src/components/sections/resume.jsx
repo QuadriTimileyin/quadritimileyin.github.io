@@ -31,6 +31,8 @@ import {
   
     return icons[tech.toLowerCase()] || <RiStackFill />;
   };
+
+  
 const Resume = () => {
     return (
         <section id="resume" className="resume-area">
