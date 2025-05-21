@@ -68,7 +68,8 @@ const Hero = () => {
                                 </div>
                                 <div className="hero-btns">
                                     <a
-                                        href="https://drive.google.com/file/d/17phIC_NJ5en03a5G0t700KXs7UskQRjZ/view?usp=sharing"
+                                    
+                                        href="https://drive.google.com/file/d/19RZ--ogT_zzkemhdxn4oe-T0RqI9dmI2/view?usp=sharing"
                                         className="theme-btn"
                                         target="_blank"
                                         rel="noopener noreferrer"
