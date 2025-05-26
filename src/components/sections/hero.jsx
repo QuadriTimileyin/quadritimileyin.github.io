@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine, RiCodeBoxLine, RiMailLine } from '@remixicon/react'
-import profile from "../../assets/images/about/profile.jpeg"
+import profile from "../../assets/images/about/profile.png"
 import partner1 from "../../assets/images/client-logos/1.png"
 import partner2 from "../../assets/images/client-logos/2.png"
 import partner3 from "../../assets/images/client-logos/3.png"
@@ -69,7 +69,7 @@ const Hero = () => {
                                 <div className="hero-btns">
                                     <a
                                     
-                                        href="https://drive.google.com/file/d/19RZ--ogT_zzkemhdxn4oe-T0RqI9dmI2/view?usp=sharing"
+                                        href="https://drive.google.com/file/d/1LxSwqyZ6Y3Kp95BxSfKKdBmgeonhIxMv/view?usp=sharing"
                                         className="theme-btn"
                                         target="_blank"
                                         rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from "../../assets/images/about/profile.jpeg"
+import profile from "../../assets/images/about/profile.png"
 import { RiFlutterFill, RiMailSendLine, RiReactjsLine, RiServerLine } from '@remixicon/react'
 import SlideUp from '../../utlits/animations/slideUp'
 const Summery = () => {
