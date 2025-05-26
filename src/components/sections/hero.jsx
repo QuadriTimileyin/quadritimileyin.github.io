@@ -15,6 +15,8 @@ const Hero = () => {
         <section id="about" className="about-area">
             <div className="container">
                 <div className="row">
+
+                    
                     {/* <!-- START ABOUT IMAGE DESIGN AREA --> */}
                     <div className="col-lg-4">
                         <SlideUp>
