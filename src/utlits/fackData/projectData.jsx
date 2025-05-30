@@ -14,7 +14,7 @@ import work_13 from "../../assets/images/projects/13.jpeg";
 import work_14 from "../../assets/images/projects/14.png";
 import work_15 from "../../assets/images/projects/15.jpeg";
 import work_16 from "../../assets/images/projects/16.png";
-import work_17 from "../../assets/images/projects/17.png";
+import work_17 from "../../assets/images/projects/17.jpeg";
 import work_18 from "../../assets/images/projects/18.png";
 import work_19 from "../../assets/images/projects/19.jpeg";
 import work_20 from "../../assets/images/projects/20.png";
@@ -122,7 +122,7 @@ export const projectsData = [
     category: "Mobile Applications",
     title: "Fintech Mobile Application",
     description: "A fintech app for managing personal finances and investments.",
-    technologies: ["Swift", "Kotlin", "Firebase"],
+    technologies: ["FLutter", "Firebase"],
   },
   {
     id: 12,
