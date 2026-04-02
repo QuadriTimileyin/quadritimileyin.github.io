@@ -47,7 +47,7 @@ const Resume = () => {
       {/* JustParkwell */}
       <Card 
   year="June 2022 - Present" 
-  title="Senior Software Engineer / Tech Lead" 
+  title="Senior Flutter Developer & Tech Lead" 
   institution="JustParkwell"
   tech={["flutter", "nextjs"]}
   achievements={[
@@ -62,14 +62,39 @@ const Resume = () => {
 
       {/* Paymita Fintech */}
       <Card 
+        year="Aug 2025 - March 2026" 
+        title="Senior Mobile Engineer (Contract)" 
+        institution="CCDL Mobile"
+        tech={["react-native", "expo", "typescript"]}
+        achievements={[
+          "Architected a full-featured real estate marketplace and investment platform using React Native, Expo Router, and NativeWind",
+          "Implemented strict Feature-Sliced Design (FSD) to cleanly separate consumer, agent, and investment modules",
+          "Integrated RTK Query for fault-tolerant financial transactions with robust error handling and retry mechanisms",
+        ]}
+      />
+
+      {/* Foursquare Convention */}
+      <Card 
+        year="April 2025 - July 2025" 
+        title="Senior Mobile Engineer (Contract)" 
+        institution="Foursquare Convention"
+        tech={["react-native", "expo", "typescript"]}
+        achievements={[
+          "Engineered real-time event features (schedules, live updates, rich media) for a high-traffic event platform",
+          "Optimized API and caching strategies to support large-scale user traffic during live events",
+          "Contributed to end-to-end deployment lifecycle and successful app store resubmission",
+        ]}
+      />
+
+      {/* Paymita Fintech */}
+      <Card 
         year="Jan 2025 - March 2025" 
         title="Senior Flutter Developer (Contract)" 
         institution="Paymita Fintech"
         achievements={[
           "Architected secure fintech app (Flutter) with Face ID biometric authentication using local_auth package",
-          "Implemented virtual card issuance and wallet system with <100ms transaction speeds ",
+          "Implemented virtual card issuance and wallet system with <100ms transaction speeds",
           "Built P2P transfers with QR scanning (mobile_scanner) and deep linking",
-          "Developed KYC compliance flow with document scanning (image_picker + image_cropper)",
         ]}
       />
 
@@ -120,7 +145,7 @@ const Resume = () => {
       <Card 
   year="Sept 2023 - Feb 2024" 
   title="Senior Full-Stack Developer (Flutter & Next.js)" 
-  institution="WareFlow AI"
+  institution="WareFlow One"
   achievements={[
     "Built end-to-end inventory platform: Flutter mobile app + Next.js dashboard",
     "Implemented Stripe and paystack subscriptions",

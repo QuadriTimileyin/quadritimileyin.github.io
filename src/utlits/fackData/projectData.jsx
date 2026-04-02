@@ -34,29 +34,229 @@ import work_33 from "../../assets/images/projects/33.jpeg";
 import work_34 from "../../assets/images/projects/34.jpeg";
 import work_35 from "../../assets/images/projects/35.png";
 
+// JustParkwell Partner gallery
+import jpPartner1 from "../../assets/images/projects/justparkwell-partner1.png";
+import jpPartner2 from "../../assets/images/projects/justparkwell-partner2.png";
+import jpPartner3 from "../../assets/images/projects/justparkwell-partner3.png";
+import jpPartner4 from "../../assets/images/projects/justparkwell-partner4.png";
+import jpPartner5 from "../../assets/images/projects/justparkwell-partner5.png";
+import jpPartner6 from "../../assets/images/projects/justparkwell-partner6.png";
+import jpPartner7 from "../../assets/images/projects/justparkwell-partner7.png";
+
+// Niply gallery
+import niply1 from "../../assets/images/projects/niply-1.png";
+import niply2 from "../../assets/images/projects/niply-2.png";
+import niply3 from "../../assets/images/projects/niply-3.png";
+import niply4 from "../../assets/images/projects/niply-4.png";
+import niply5 from "../../assets/images/projects/niply-5.png";
+import niply6 from "../../assets/images/projects/niply-6.png";
+
+// Ondgo gallery
+import ondgoFeatured from "../../assets/images/projects/ondgo-featured.png";
+import ondgo1 from "../../assets/images/projects/ondgo-1.png";
+import ondgo2 from "../../assets/images/projects/ondgo-2.png";
+
+// Foursquare Convention gallery
+import fsqFeatured from "../../assets/images/projects/fsq-featured.png";
+import foursquare1 from "../../assets/images/projects/foursquare-1.png";
+import foursquare2 from "../../assets/images/projects/foursquare-2.png";
+import foursquare3 from "../../assets/images/projects/foursquare-3.png";
+import foursquare4 from "../../assets/images/projects/foursquare-4.png";
+import foursquare5 from "../../assets/images/projects/foursquare-5.png";
+
 export const projectsData = [
-  // Original items (1-12)
+  // =============================================
+  // MOBILE APPLICATIONS (first, highest priority)
+  // =============================================
   {
-    id: 1,
-    src: work_1,
-    category: "CI/CD & Deployment Automation",
-    title: "Enaira Project",
-    description: "A blockchain-based digital currency project for secure and fast transactions.",
-    technologies: ["Blockchain", "DevOps", "Docker"],
+    id: 16,
+    src: work_16,
+    category: "Mobile Applications",
+    title: "JustParkwell",
+    description: "A smart, AI-powered parking management platform supporting on-demand bookings and automated enforcement across 3 countries. Features real-time map interface with custom Google Maps SDK markers and geofencing for parking validation.",
+    technologies: ["Flutter", "Laravel", "Google Maps SDK", "BLoC", "Shorebird"],
   },
   {
-    id: 2,
-    src: work_2,
-    category: "CI/CD & Deployment Automation",
-    title: "Travel Website",
-    description: "A responsive travel booking platform with real-time availability.",
-    technologies: ["React", "Node.js", "MongoDB"],
+    id: 18,
+    src: jpPartner1,
+    gallery: [jpPartner1, jpPartner2, jpPartner3, jpPartner4, jpPartner5, jpPartner6, jpPartner7],
+    category: "Mobile Applications",
+    title: "JustParkwell Partner",
+    description: "Empowers businesses, lot owners, and facilities to digitize their parking operations. Manage bookings, monitor occupancy, and monetize parking spaces in real time with staff controls and analytics.",
+    technologies: ["Flutter", "Laravel", "Firebase", "Shorebird"],
+  },
+  {
+    id: 20,
+    src: work_20,
+    category: "Mobile Applications",
+    title: "CityPark",
+    description: "Government-grade smart city parking application for municipalities and citizens. Enforcement workflows, zone management, and live occupancy monitoring.",
+    technologies: ["Flutter", "Laravel", "Google Maps SDK"],
+  },
+  {
+    id: 22,
+    src: work_22,
+    category: "Mobile Applications",
+    title: "CityPark Partner",
+    description: "Mobile app for partner operators under the CityPark network. Manage parking zones, enforcement, and revenue tracking on the go.",
+    technologies: ["Flutter", "Laravel"],
+  },
+  {
+    id: 24,
+    src: work_24,
+    category: "Mobile Applications",
+    title: "Crafflux",
+    description: "On-demand artisan services platform. Book trusted handymen with real-time availability, in-app chat, and Paystack integration processing 10M+ monthly transactions.",
+    technologies: ["Flutter", "Laravel", "Firebase", "Paystack"],
+  },
+  {
+    id: 26,
+    src: work_26,
+    category: "Mobile Applications",
+    title: "Crafflux Artisan App",
+    description: "Companion app for artisans to receive bookings, manage schedules, track earnings, and communicate with customers in real time.",
+    technologies: ["Flutter", "Firebase", "FCM"],
+  },
+  {
+    id: 14,
+    src: work_14,
+    category: "Mobile Applications",
+    title: "TastyTokens",
+    description: "NFC-integrated loyalty platform for restaurants. Optimized NFC scan latency to <500ms, offline-first architecture with Hive, and Mixpanel analytics improving campaign conversion by 35%.",
+    technologies: ["Flutter", "Firebase", "Mixpanel", "NFC", "Hive"],
+  },
+  {
+    id: 27,
+    src: niply1,
+    gallery: [niply1, niply2, niply3, niply4, niply5, niply6],
+    category: "Mobile Applications",
+    title: "Niply Fintech",
+    description: "B2B platform for automated invoicing, digital receipts, and real-time payment tracking. Refactored to modular Riverpod architecture improving feature delivery velocity by 40%.",
+    technologies: ["Flutter", "Riverpod", "Stripe", "Paystack"],
+  },
+  {
+    id: 12,
+    src: work_12,
+    category: "Mobile Applications",
+    title: "WareFlow One",
+    description: "Inventory management app with custom MLKit barcode scanning improving check speed by 60%. Subscription tiers via StoreKit & Stripe, offline sync with Hive + Firebase.",
+    technologies: ["Flutter", "MLKit", "Hive", "StoreKit", "Stripe"],
+  },
+  {
+    id: 28,
+    src: ondgoFeatured,
+    gallery: [ondgoFeatured, ondgo1, ondgo2],
+    category: "Mobile Applications",
+    title: "Ondgo",
+    description: "Cross-platform mobile application available on both iOS and Android app stores.",
+    technologies: ["Flutter", "Dart"],
+  },
+  {
+    id: 11,
+    src: fsqFeatured,
+    gallery: [fsqFeatured, foursquare1, foursquare2, foursquare3, foursquare4, foursquare5],
+    category: "Mobile Applications",
+    title: "Foursquare Convention",
+    description: "High-traffic event platform with real-time schedules, live updates, and rich media. Optimized API caching strategies to support large-scale attendee traffic during live events.",
+    technologies: ["React Native", "Expo", "TypeScript", "Firebase"],
+  },
+  {
+    id: 5,
+    src: work_5,
+    category: "Mobile Applications",
+    title: "Formelo",
+    description: "A mobile-first platform for creating and managing forms with real-time sync.",
+    technologies: ["Flutter", "Dart", "Firebase"],
+  },
+  {
+    id: 6,
+    src: work_6,
+    category: "Mobile Applications",
+    title: "Ticket Booking App",
+    description: "A mobile app for booking tickets for events and movies with real-time seat selection.",
+    technologies: ["React Native", "Redux", "Node.js"],
+  },
+
+  // =============================================
+  // WEB APPLICATIONS
+  // =============================================
+  {
+    id: 17,
+    src: work_17,
+    category: "Web Applications",
+    title: "JustParkwell Web Dashboard",
+    description: "All-in-one platform for managing parking operations. Live dashboard, AI-powered analytics, digital ticketing, and full payment tracking for cities, businesses, and operators.",
+    technologies: ["Next.js", "Laravel", "TailwindCSS"],
+  },
+  {
+    id: 19,
+    src: work_19,
+    category: "Web Applications",
+    title: "JustParkwell Partner Web",
+    description: "Dashboard for parking lot owners and property managers to oversee operations at scale — bookings, revenue tracking, slot control, and staff management.",
+    technologies: ["Next.js", "Laravel", "TailwindCSS"],
+  },
+  {
+    id: 21,
+    src: work_21,
+    category: "Web Applications",
+    title: "CityPark Web",
+    description: "Web dashboard for city authorities to monitor parking activity, enforcement, and zone analytics.",
+    technologies: ["Next.js", "Laravel"],
+  },
+  {
+    id: 23,
+    src: work_23,
+    category: "Web Applications",
+    title: "CityPark Partner Web",
+    description: "Web-based management panel for CityPark operating partners.",
+    technologies: ["Next.js", "Laravel"],
+  },
+  {
+    id: 25,
+    src: work_25,
+    category: "Web Applications",
+    title: "Crafflux Admin Dashboard",
+    description: "Web-based dashboard for managing artisan bookings, earnings, users, and platform analytics.",
+    technologies: ["Next.js", "Laravel"],
+  },
+  {
+    id: 15,
+    src: work_15,
+    category: "Web Applications",
+    title: "TastyTokens Web & Admin",
+    description: "Website, admin dashboard, and blog for the TastyTokens loyalty platform.",
+    technologies: ["Next.js", "Contentful", "React"],
+  },
+  {
+    id: 13,
+    src: work_13,
+    category: "Web Applications",
+    title: "Ticketloope",
+    description: "Web-based event ticketing platform for seamless discovery, purchase, and management of event tickets.",
+    technologies: ["Next.js", "React", "TailwindCSS"],
+  },
+  {
+    id: 29,
+    src: work_29,
+    category: "Web Applications",
+    title: "FoodpreneursHub LMS",
+    description: "Learning management system for food entrepreneurs with structured courses and admin tools.",
+    technologies: ["Next.js", "TailwindCSS", "Contentful"],
+  },
+  {
+    id: 30,
+    src: work_30,
+    category: "Web Applications",
+    title: "BL E-commerce",
+    description: "E-commerce shoe shopping platform with modern UI and secure Stripe checkout.",
+    technologies: ["Next.js", "React", "Stripe"],
   },
   {
     id: 3,
     src: work_3,
     category: "Web Applications",
-    title: "Education Website",
+    title: "Education Platform",
     description: "An e-learning platform with interactive courses and quizzes.",
     technologies: ["Angular", "Firebase", "TypeScript"],
   },
@@ -69,38 +269,6 @@ export const projectsData = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: 5,
-    src: work_5,
-    category: "Mobile Applications",
-    title: "Formelo Website",
-    description: "A mobile-first platform for creating and managing forms.",
-    technologies: ["Flutter", "Dart", "Firebase"],
-  },
-  {
-    id: 6,
-    src: work_6,
-    category: "Mobile Applications",
-    title: "Ticket Booking Mobile Application",
-    description: "A mobile app for booking tickets for events and movies.",
-    technologies: ["React Native", "Redux", "Node.js"],
-  },
-  {
-    id: 7,
-    src: work_7,
-    category: "CI/CD & Deployment Automation",
-    title: "Deployment of Web Application",
-    description: "Automated CI/CD pipeline for deploying web applications.",
-    technologies: ["Jenkins", "Kubernetes", "AWS"],
-  },
-  {
-    id: 8,
-    src: work_8,
-    category: "Web Dashboards",
-    title: "Wareflow Website",
-    description: "A dashboard for managing warehouse inventory and logistics.",
-    technologies: ["Vue.js", "Laravel", "MySQL"],
-  },
-  {
     id: 9,
     src: work_9,
     category: "Web Applications",
@@ -108,182 +276,68 @@ export const projectsData = [
     description: "A government parastatal website for public services.",
     technologies: ["PHP", "Bootstrap", "MySQL"],
   },
+
+  // =============================================
+  // WEB DASHBOARDS
+  // =============================================
+  {
+    id: 8,
+    src: work_8,
+    category: "Web Dashboards",
+    title: "WareFlow One Dashboard",
+    description: "Web dashboard for managing warehouse inventory and logistics operations.",
+    technologies: ["Vue.js", "Laravel", "MySQL"],
+  },
   {
     id: 10,
     src: work_10,
     category: "Web Dashboards",
     title: "Inventory Management System",
-    description: "A web-based system for tracking and managing inventory.",
+    description: "A web-based system for tracking and managing inventory with analytics.",
     technologies: ["React", "Express", "PostgreSQL"],
   },
-  {
-    id: 11,
-    src: work_11,
-    category: "Mobile Applications",
-    title: "Fintech Mobile Application",
-    description: "A fintech app for managing personal finances and investments.",
-    technologies: ["FLutter", "Firebase"],
-  },
-  {
-    id: 12,
-    src: work_12,
-    category: "Mobile Applications",
-    title: "Inventory Management Mobile Application",
-    description: "A mobile app for managing inventory on the go.",
-    technologies: ["Ionic", "Capacitor", "SQLite"],
-  },
 
-  // Your added projects, now properly split
+  // =============================================
+  // CI/CD & DEPLOYMENT AUTOMATION
+  // =============================================
   {
-    id: 13,
-    src: work_13,
-    category: "Web Applications",
-    title: "Ticketloope",
-    description: "A web-based event ticketing platform built for seamless discovery, purchase, and management of event tickets.",
-    technologies: ["Next.js", "React", "TailwindCSS"],
+    id: 35,
+    src: work_35,
+    category: "CI/CD & Deployment Automation",
+    title: "Flutter Mobile App Deployments",
+    description: "CI/CD pipelines using Shorebird for Flutter hotfixes and Xcode Cloud for iOS builds. Apple Transporter for App Store uploads and TestFlight distribution.",
+    technologies: ["Flutter", "Shorebird", "Xcode Cloud", "Transporter"],
   },
   {
-    id: 14,
-    src: work_14,
-    category: "Mobile Applications",
-    title: "TastyTokens",
-    description: "TastyTokens is a smart customer loyalty platform I helped design and develop, built to strengthen relationships between restaurants and their customers. The solution spans both mobile and web platforms, allowing diners to seamlessly earn and redeem tokens by scanning NFC tags placed at participating venues. These tokens act as loyalty points that unlock rewards, discounts, and special offers.",
-    technologies: ["Flutter", "Firebase", "Mixpanel"],
+    id: 1,
+    src: work_1,
+    category: "CI/CD & Deployment Automation",
+    title: "Enaira Project",
+    description: "A blockchain-based digital currency project with automated deployment pipelines.",
+    technologies: ["Blockchain", "DevOps", "Docker"],
   },
   {
-    id: 15,
-    src: work_15,
-    category: "Web Applications",
-    title: "TastyTokens Web, Blog,and Admin Dashboard",
-    description: "Website, Admin dashboard and blog for the TastyTokens platform.",
-    technologies: ["Next.js", "Contentful", "React"],
+    id: 2,
+    src: work_2,
+    category: "CI/CD & Deployment Automation",
+    title: "Travel Website",
+    description: "A responsive travel booking platform with real-time availability and CI/CD pipeline.",
+    technologies: ["React", "Node.js", "MongoDB"],
   },
   {
-    id: 16,
-    src: work_16,
-    category: "Mobile Applications",
-    title: "JustParkwell",
-    description: "JustParkwell is a smart, AI-powered parking management platform designed to simplify and enhance urban mobility for individuals, businesses, and municipalities. It supports both on-demand parking bookings and automated parking enforcement, streamlining the entire lifecycle from booking to payment and real-time tracking.",
-    technologies: ["Flutter", "Laravel"],
-  },
-  {
-    id: 17,
-    src: work_17,
-    category: "Web Applications",
-    title: "JustParkwell Web Dashboard",
-    description: "JustParkwell Web is your all-in-one platform for managing, analyzing, and optimizing parking operations. Built for cities, businesses, and operators, it offers a live dashboard, AI-powered analytics, digital ticketing, and full payment tracking—all in one place.",
-    technologies: ["Next.js", "Laravel"],
-  },
-  {
-    id: 18,
-    src: work_18,
-    category: "Mobile Applications",
-    title: "JustParkwell Partner",
-    description: "JustParkwell Partner empowers businesses, lot owners, and facilities to digitize their parking operations, manage bookings, and earn revenue effortlessly. Whether you run a hotel, mall, office complex, or standalone lot, the Partner platform gives you the tools to manage, monitor, and monetize your parking spaces—all in real time.",
-    technologies: ["Flutter", "Laravel"],
-  },
-  {
-    id: 19,
-    src: work_19,
-    category: "Web Applications",
-    title: "JustParkwell Partner Web",
-    description: "JustParkwell Partner Web is the all-in-one dashboard built for parking lot owners, property managers, and facilities to oversee their operations at scale. From bookings and revenue tracking to slot control and staff management, everything is accessible with just a few clicks.",
-    technologies: ["Next.js", "Laravel"],
-  },
-  {
-    id: 20,
-    src: work_20,
-    category: "Mobile Applications",
-    title: "CityPark",
-    description: "Smart city parking application for government use and citizens.",
-    technologies: ["Flutter", "Laravel"],
-  },
-  {
-    id: 21,
-    src: work_21,
-    category: "Web Applications",
-    title: "CityPark Web",
-    description: "Web dashboard for city authorities to monitor parking activity.",
-    technologies: ["Next.js", "Laravel"],
-  },
-  {
-    id: 22,
-    src: work_22,
-    category: "Mobile Applications",
-    title: "CityPark Partner",
-    description: "Mobile app for partner operators under the CityPark network.",
-    technologies: ["Flutter", "Laravel"],
-  },
-  {
-    id: 23,
-    src: work_23,
-    category: "Web Applications",
-    title: "CityPark Partner Web",
-    description: "Web-based management panel for CityPark’s operating partners.",
-    technologies: ["Next.js", "Laravel"],
-  },
-  {
-    id: 24,
-    src: work_24,
-    category: "Mobile Applications",
-    title: "Crafflux",
-    description: "Platform for booking and managing artisans and handymen services.",
-    technologies: ["Flutter", "Laravel"],
-  },
-  {
-    id: 25,
-    src: work_25,
-    category: "Web Applications",
-    title: "Crafflux Admin Dashboard",
-    description: "Web-based dashboard for managing bookings, earnings, and users.",
-    technologies: ["Next.js", "Laravel"],
-  },
-  {
-    id: 26,
-    src: work_26,
-    category: "Mobile Applications",
-    title: "Crafflux Artisan App",
-    description: "Artisan companion app for Crafflux to fulfill service tasks.",
-    technologies: ["Flutter", "Firebase"],
-  },
-  {
-    id: 27,
-    src: work_27,
-    category: "Mobile Applications",
-    title: "Fintech Mobile Application",
-    description: "A secure fintech app for money transfer, wallet management, and transactions.",
-    technologies: ["Flutter", "Laravel", "Stripe", "Paystack"],
-  },
-  {
-    id: 28,
-    src: work_28,
-    category: "Mobile Applications",
-    title: "Camppurse",
-    description: "Student-oriented mobile platform for managing personal savings and contributions.",
-    technologies: ["Flutter", "Firebase"],
-  },
-  {
-    id: 29,
-    src: work_29,
-    category: "Web Applications",
-    title: "FoodpreneursHub LMS",
-    description: "A learning management system for food entrepreneurs offering structured courses and admin tools.",
-    technologies: ["Next.js", "TailwindCSS", "Contentful"],
-  },
-  {
-    id: 30,
-    src: work_30,
-    category: "Web Applications",
-    title: "BL E-commerce",
-    description: "An e-commerce shoe shopping platform with modern UI and secure checkout.",
-    technologies: ["Next.js", "React", "Stripe"],
+    id: 7,
+    src: work_7,
+    category: "CI/CD & Deployment Automation",
+    title: "Web Application Deployment",
+    description: "Automated CI/CD pipeline for deploying web applications to cloud infrastructure.",
+    technologies: ["Jenkins", "Kubernetes", "AWS"],
   },
   {
     id: 31,
     src: work_31,
     category: "CI/CD & Deployment Automation",
     title: "Austere Africa Website",
-    description: "Configured GitHub Actions pipeline to auto-deploy a statically exported Next.js site to cPanel via FTP, with optimized asset handling.",
+    description: "GitHub Actions pipeline for auto-deploying a Next.js static site to cPanel via FTP with optimized asset handling.",
     technologies: ["Next.js", "GitHub Actions", "FTP", "cPanel"],
   },
   {
@@ -291,7 +345,7 @@ export const projectsData = [
     src: work_32,
     category: "CI/CD & Deployment Automation",
     title: "Ideosphere Africa Website",
-    description: "Implemented GitHub Actions deployment pipeline for Next.js static export to shared hosting using FTP, ensuring automated CI/CD.",
+    description: "GitHub Actions deployment pipeline for Next.js static export to shared hosting using FTP.",
     technologies: ["Next.js", "GitHub Actions", "FTP"],
     url: "https://ideosphere.africa"
   },
@@ -300,7 +354,7 @@ export const projectsData = [
     src: work_33,
     category: "CI/CD & Deployment Automation",
     title: "TheCorporation Website",
-    description: "CI/CD setup for Gatsby site with automated deployment to cPanel using GitHub Actions and Yarn. Static files served directly from the public folder.",
+    description: "CI/CD for Gatsby site with automated cPanel deployment using GitHub Actions.",
     technologies: ["Gatsby", "Yarn", "GitHub Actions", "FTP"],
     url: "https://thecorporation.africa"
   },
@@ -309,19 +363,10 @@ export const projectsData = [
     src: work_34,
     category: "CI/CD & Deployment Automation",
     title: "Digitalesque Website",
-    description: "CI/CD setup for a Gatsby static site using GitHub Actions and FTP deployment to shared cPanel hosting.",
+    description: "CI/CD setup for Gatsby static site using GitHub Actions and FTP deployment.",
     technologies: ["Gatsby", "GitHub Actions", "FTP"],
     url: "https://digitalesque.africa"
   },
-  {
-    id: 35,
-    src: work_35, // Optional placeholder image
-    category: "CI/CD & Deployment Automation",
-    title: "Flutter Mobile App Deployments",
-    description: "Managed CI/CD pipelines using Shorebird for Flutter hotfixes and Xcode Cloud for iOS builds. Used Apple Transporter for App Store uploads and TestFlight distribution.",
-    technologies: ["Flutter", "Shorebird", "Xcode Cloud", "Transporter", "App Store Connect"]
-  }
-  
 ];
 
 export const getProjectById = (id) => projectsData.find(project => project.id === id);

@@ -16,7 +16,7 @@ const ContactForm = () => {
                     >
                         {/* Hidden Inputs */}
                         <input type="hidden" name="_captcha" value="false" />
-                        <input type="hidden" name="_next" value="https://abrahamadebayo.github.io/thank-you" />
+                        <input type="hidden" name="_next" value={`${window.location.origin}/thank-you`} />
                         <input type="text" name="_honey" style={{ display: 'none' }} />
 
                         <div className="row">
@@ -45,7 +45,7 @@ const ContactForm = () => {
                                         id="email"
                                         name="email"
                                         className="form-control"
-                                        placeholder="hello@websitename.com"
+                                        placeholder="you@company.com"
                                         required
                                     />
                                     <label htmlFor="email" className="for-icon">

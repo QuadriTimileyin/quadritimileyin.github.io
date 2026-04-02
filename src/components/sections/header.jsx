@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { RiShakeHandsLine } from '@remixicon/react'
 import { menuList } from '../../utlits/fackData/menuList'
+import AppLinksDropdown from './appLinksDropdown'
 
 const Header = () => {
   const pathName = useLocation().pathname
@@ -28,12 +29,11 @@ const Header = () => {
     }
   }
 
-  // Define a style object for the text logo
   const logoStyle = {
     fontFamily: 'Pacifico, cursive',
     fontSize: 'xx-large',
     fontWeight: 500,
-    margin: 0 // Optional: resets default paragraph margin
+    margin: 0
   }
 
   return (
@@ -41,7 +41,6 @@ const Header = () => {
       <div className="header-upper">
         <div className="container">
           <div className="header-inner d-flex align-items-center">
-            {/* START LOGO DESIGN AREA */}
             <div className="logo-outer">
               <div className="logo">
                 <Link to="/">
@@ -49,10 +48,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            {/* END LOGO DESIGN AREA */}
-            {/* START NAV DESIGN AREA */}
             <div className="nav-outer clearfix mx-auto">
-              {/* Main Menu */}
               <nav className="main-menu navbar-expand-lg">
                 <div className="navbar-header">
                   <div className="mobile-logo">
@@ -60,7 +56,9 @@ const Header = () => {
                       <p style={logoStyle}>Timmy</p>
                     </Link>
                   </div>
-                  {/* Toggle Button */}
+                  <div className="mobile-app-links">
+                    <AppLinksDropdown />
+                  </div>
                   <button type="button" className="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
@@ -80,8 +78,9 @@ const Header = () => {
                 </div>
               </nav>
             </div>
-            <div className="menu-btns">
-              <Link to="/contact" className="theme-btn">
+            <div className="menu-btns d-flex align-items-center">
+              <AppLinksDropdown />
+              <Link to="/contact" className="hero-btn hero-btn--primary header-hire-btn">
                 Hire Me <RiShakeHandsLine size={15} />
               </Link>
             </div>

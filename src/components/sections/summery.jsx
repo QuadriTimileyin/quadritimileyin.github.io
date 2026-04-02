@@ -21,26 +21,26 @@ const Summery = () => {
                         <SlideUp>
                             <div className="about-content-part">
                             <h1 className="text-4xl font-bold mb-6">
-        Timileyin Quadri<br />
-        <span className="text-primary">Software Engineer</span>
+        Timileyin (Timmy) Quadri<br />
+        <span className="text-primary">Senior Mobile Engineer</span>
       </h1>
                                 <p className="text-lg leading-relaxed mb-6">
-        I architect <span className="font-semibold">scalable digital experiences</span> through expert Flutter and Next.js development. Specializing in <span className="text-primary">cross-platform applications</span>, I bridge the gap between pixel-perfect UIs and robust backend systems, delivering solutions that drive measurable business impact.
+        I architect <span className="font-semibold">scalable digital experiences</span> through expert React Native, Flutter, and modern web development. Specializing in <span className="text-primary">cross-platform mobile applications</span> for fintech, mobility, logistics, and SaaS, I deliver production apps with 98% crash-free reliability and measurable business impact.
       </p>
       <div className="space-y-4 mb-8">
         <p>
           <RiFlutterFill className="inline mr-2 text-blue-500" size={20} />
-          <strong>Mobile Engineering:</strong> Build production-grade Flutter apps with 99% crash-free sessions, leveraging Shorebird for hotfixes and Xcode Cloud for seamless iOS deployments.
+          <strong>Mobile Engineering:</strong> Build production-grade Flutter &amp; React Native apps with 98% crash-free reliability. Expert in BLoC, Riverpod, RTK Query, and Feature-Sliced Design (FSD).
         </p>
         
         <p>
           <RiReactjsLine className="inline mr-2 text-blue-400" size={20} />
-          <strong>Web Solutions:</strong> Craft high-performance Next.js applications with TypeScript, achieving 95+ Lighthouse scores through SSR optimization and intelligent caching.
+          <strong>DevOps &amp; Tooling:</strong> Shorebird OTA updates, EAS builds, Fastlane, Xcode Cloud, Codemagic, and GitHub Actions for seamless CI/CD pipelines.
         </p>
 
         <p>
           <RiServerLine className="inline mr-2 text-purple-500" size={20} />
-          <strong>Full-Stack Capabilities:</strong> Integrate Laravel backends with mobile/web frontends, implementing JWT authentication, real-time APIs, and automated CI/CD pipelines.
+          <strong>Full-Stack Capabilities:</strong> Laravel &amp; Python backends, RESTful APIs, Firebase, WebSockets, Stripe/Paystack integrations, and real-time data systems.
         </p>
       </div>
                                 <p>

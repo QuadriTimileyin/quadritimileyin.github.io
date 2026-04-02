@@ -28,7 +28,7 @@ const ServiceGrid = () => {
                             id={2}
                             icon={<RiSmartphoneFill size={60} />}
                             title={"Mobile App Development"}
-                            description={"Cross-platform mobile apps built with Flutter for performance and scalability."}
+                            description={"Cross-platform mobile apps built with Flutter and React Native for performance and scalability."}
                         />
                         <Card
                             id={3}
