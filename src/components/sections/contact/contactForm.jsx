@@ -4,82 +4,61 @@ import SlideUp from '../../../utlits/animations/slideUp';
 
 const ContactForm = () => {
     return (
-        <div className="col-lg-12">
-            <SlideUp>
-                <div className="contact-form contact-form-area">
-                    <form
-                        id="contactForm"
-                        className="contactForm"
-                        name="contactForm"
-                        action="https://formsubmit.co/timidev34@gmail.com"
-                        method="POST"
-                    >
-                        {/* Hidden Inputs */}
-                        <input type="hidden" name="_captcha" value="false" />
-                        <input type="hidden" name="_next" value={`${window.location.origin}/thank-you`} />
-                        <input type="text" name="_honey" style={{ display: 'none' }} />
+        <SlideUp>
+            <form
+                action="https://formsubmit.co/timidev34@gmail.com"
+                method="POST"
+                className="space-y-5"
+            >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value={`${window.location.origin}/thank-you`} />
+                <input type="text" name="_honey" className="hidden" />
 
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label htmlFor="name">Full Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="form-control"
-                                        placeholder="Steve Milner"
-                                        required
-                                    />
-                                    <label htmlFor="name" className="for-icon">
-                                        <i className="far fa-user"></i>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div className="col-md-6">
-                                <div className="form-group">
-                                    <label htmlFor="email">Email Address</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        className="form-control"
-                                        placeholder="you@company.com"
-                                        required
-                                    />
-                                    <label htmlFor="email" className="for-icon">
-                                        <i className="far fa-envelope"></i>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div className="col-md-12">
-                                <div className="form-group">
-                                    <label htmlFor="message">Your Message</label>
-                                    <textarea
-                                        name="message"
-                                        id="message"
-                                        className="form-control"
-                                        rows="4"
-                                        placeholder="Write your message"
-                                        required
-                                    ></textarea>
-                                </div>
-                            </div>
-
-                            <div className="col-md-12">
-                                <div className="form-group mb-0">
-                                    <button type="submit" className="theme-btn">
-                                        Send Message <i><RiMailLine size={15} /></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <div className="grid sm:grid-cols-2 gap-5">
+                    <div>
+                        <label htmlFor="name" className="block text-sm text-text-secondary mb-1.5">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Steve Milner"
+                            required
+                            className="w-full px-4 py-3 bg-elevated border border-border rounded-lg text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent transition-colors"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="email" className="block text-sm text-text-secondary mb-1.5">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@company.com"
+                            required
+                            className="w-full px-4 py-3 bg-elevated border border-border rounded-lg text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent transition-colors"
+                        />
+                    </div>
                 </div>
-            </SlideUp>
-        </div>
+
+                <div>
+                    <label htmlFor="message" className="block text-sm text-text-secondary mb-1.5">Your Message</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message"
+                        required
+                        className="w-full px-4 py-3 bg-elevated border border-border rounded-lg text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                    />
+                </div>
+
+                <button
+                    type="submit"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded-lg font-medium transition-colors"
+                >
+                    Send Message <RiMailLine size={15} />
+                </button>
+            </form>
+        </SlideUp>
     );
 };
 

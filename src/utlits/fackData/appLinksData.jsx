@@ -1,20 +1,20 @@
 import work_16 from "../../assets/images/projects/16.png";
 import jpPartner1 from "../../assets/images/projects/justparkwell-partner1.png";
-import work_20 from "../../assets/images/projects/20.png";
-import work_24 from "../../assets/images/projects/24.png";
+import ondgoFeatured from "../../assets/images/projects/ondgo-featured.png";
+import fsqFeatured from "../../assets/images/projects/fsq-featured.png";
 
 // Featured apps shown in the hero showcase (above the fold)
 export const featuredApps = [
   {
     id: 1,
     name: "JustParkwell",
-    tagline: "AI-Powered Smart Parking",
+    tagline: "Multi-Country Smart Parking",
     image: work_16,
     bullets: [
-      "Real-time parking booking & enforcement across 3 countries",
-      "Custom Google Maps SDK integration with geofencing & live tracking",
+      "4-country platform (NG, US, CA, SN) with Stripe + Paystack multi-gateway payments",
+      "Hybrid Riverpod + GetX architecture, Google Maps with polyline directions & QR ticketing",
     ],
-    tech: ["Flutter", "Laravel", "Google Maps SDK", "BLoC"],
+    tech: ["Flutter", "Riverpod", "GetX", "Stripe", "Paystack"],
     appStore: "https://apps.apple.com/in/app/justparkwell/id1596602474",
     playStore: "https://play.google.com/store/apps/details?id=ng.parkwell.user",
     projectId: 16,
@@ -22,42 +22,43 @@ export const featuredApps = [
   {
     id: 2,
     name: "JustParkwell Partner",
-    tagline: "Parking Facility Management",
+    tagline: "B2B Park Management",
     image: jpPartner1,
     bullets: [
-      "Digitize parking operations with real-time bookings & revenue tracking",
-      "Slot management, staff controls, and monetization tools for lot owners",
+      "NFC tag read/write/debit for parking enforcement & validation",
+      "Wallet & payout system, associate staff controls, multi-language (EN/FR)",
     ],
-    tech: ["Flutter", "Laravel", "Firebase", "Shorebird"],
+    tech: ["Flutter", "GetX", "NFC", "Firebase"],
     appStore: "https://apps.apple.com/in/app/justparkwell-partner/id1620877263",
     playStore: "https://play.google.com/store/apps/details?id=com.parkwell.partner",
     projectId: 18,
   },
   {
     id: 3,
-    name: "Crafflux",
-    tagline: "On-Demand Artisan Services",
-    image: work_24,
+    name: "onDgo",
+    tagline: "Fintech Super App",
+    image: ondgoFeatured,
     bullets: [
-      "Book trusted artisans with real-time availability & in-app chat",
-      "Paystack integration processing 10M+ monthly transactions",
+      "15+ services: wallets, flights (Crane + Videcom), bills, P2P transfers",
+      "Riverpod code-gen, Freezed models, biometric auth, Sentry monitoring",
     ],
-    tech: ["Flutter", "Laravel", "Firebase", "Paystack"],
-    playStore: "https://play.google.com/store/apps/details?id=com.crafflux.user",
-    projectId: 24,
+    tech: ["Flutter", "Riverpod", "Freezed", "Dio", "Sentry"],
+    appStore: "https://apps.apple.com/in/app/ondgo/id1631542716",
+    playStore: "https://play.google.com/store/search?q=ondgo&c=apps",
+    projectId: 28,
   },
   {
     id: 4,
-    name: "CityPark",
-    tagline: "Smart City Parking",
-    image: work_20,
+    name: "Foursquare Convention",
+    tagline: "Event Platform",
+    image: fsqFeatured,
     bullets: [
-      "Government-grade parking platform for cities and citizens",
-      "Enforcement workflows, zone management, and live occupancy data",
+      "Expo SDK 53 + React 19, Redux Toolkit with offline persistence",
+      "Remita payment via WebView, YouTube live streaming, QR event registration",
     ],
-    tech: ["Flutter", "Laravel", "Google Maps SDK"],
-    playStore: "https://play.google.com/store/apps/details?id=ng.citypark.user",
-    projectId: 20,
+    tech: ["React Native", "Expo", "Redux Toolkit", "NativeWind"],
+    playStore: "https://play.google.com/store/apps/details?id=com.justparkwell.foursquareappng",
+    projectId: 11,
   },
 ];
 

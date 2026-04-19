@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #08080a;
+  background-image: radial-gradient(circle, #1e1e21 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}

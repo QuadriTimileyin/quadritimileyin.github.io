@@ -6,6 +6,7 @@ const Service = () => {
     return (
         <>
             <ServiceGrid />
+            <Pricing />
         </>
     )
 }
